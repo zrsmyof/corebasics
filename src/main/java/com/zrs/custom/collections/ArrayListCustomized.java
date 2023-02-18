@@ -36,7 +36,7 @@ public class ArrayListCustomized<E> {
             throw new IndexOutOfBoundsException();
         }
         E removedElement = (E) array[idx];
-        for (int i = idx; i < size; i++) {
+        for (int i = idx; i < size - 1; i++) {
             array[i] = array[i + 1];
         }
         size--;
